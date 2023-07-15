@@ -1,14 +1,26 @@
-.title{
-    font-size: 20px;
+
+
+.title {
+    font-size: 30px;
     font-weight: bold;
+    font-family: "SF Pro Text", serif;
+
+    margin: 0 50% auto;
+
 }
-textarea{
+
+textarea {
     width: 50%;
     height: 200px;
     resize: none;
-    margin-bottom: 10px;
+    background-color: #121212;
+    font-size: 17px;
+    font-family: "SF Pro Text", serif;
+    margin: auto;
+
 }
-button{
+
+button {
     margin-top: 10px;
     border: none;
     background-color: #f3885b;
@@ -16,5 +28,51 @@ button{
     padding: 6px 8px;
     font-size: 16px;
     font-weight: bold;
+}
 
+@media (max-width: 768px) {
+    .title {
+        font-size: 16px;
+    }
+
+    textarea {
+        width: 100%;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #222;
+        color: #fff;
+    }
+
+    .title {
+        color: #fff;
+        margin: 0 25% auto;
+    }
+
+    textarea {
+        color: #fff;
+        background-color: #121212;
+        margin:auto;
+    }
+
+    button {
+        background-color: lawngreen;
+        margin-right: 10px;
+    }
+
+    button:hover {
+        background-color: #f3885b;
+    }
+
+#myTextarea{
+
+        margin: 2rem 25% auto;
+
+}
+.buttons{
+        margin: 0 25% auto;
+
+}
 }
